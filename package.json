@@ -1,7 +1,7 @@
 {
   "name": "todo-electron",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Boom",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,20 @@
     "build": "electron-builder build --win --publish never",
     "deploy": "electron-builder build --win --publish always"
   },
-  "author": "",
+  "build": {
+    "appId": "com.example.app",
+    "win": {
+      "publisherName": "VikashIB"
+    }
+  },
+  "author": "Vikash",
+  "publish": {
+      "provider": "github",
+      "owner": "todoElectronApp",
+      "repo": "todoElectronApp",
+      "releaseType": "release",
+      "url": "https://github.com/todoElectronApp/todoElectronApp/releases"
+  },
   "license": "ISC",
   "devDependencies": {
     "electron": "^30.0.2",
